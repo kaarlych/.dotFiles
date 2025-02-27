@@ -1,6 +1,8 @@
 [user]
 	name = Karol Janowski
 	email = karoljanowski@yahoo.com
+[init]
+	defaultBranch = main  
 [color]
 	ui = auto
 [credential] 
@@ -8,6 +10,7 @@
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [core]
+  editor = nvim
 	autocrlf = input
 	excludesFile = ~/.global_gitignore
 [filter "lfs"]
