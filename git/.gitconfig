@@ -3,8 +3,7 @@
 	email = karoljanowski@yahoo.com
 [color]
 	ui = auto
-[credential]
-	helper = 
+[credential] 
 	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
