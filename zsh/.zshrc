@@ -39,10 +39,9 @@ export PATH="$PATH:$HOME/.rvm/bin"
 # Add Postgres to Path
 export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
 
-# COLORLS config
-PATH=$PATH:$(ruby -e 'puts Gem.bindir')
-source $(dirname $(gem which colorls))/tab_complete.sh
-alias lc='colorls'
+
+# eza better ls config
+alias ls="eza --icons=always"
 
 # Added Bat theme config
 export BAT_THEME="base16"
