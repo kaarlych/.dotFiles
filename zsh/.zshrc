@@ -130,3 +130,6 @@ export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
 PATH=$PATH:$(ruby -e 'puts Gem.bindir')
 source $(dirname $(gem which colorls))/tab_complete.sh
 alias lc='colorls'
+
+# Added Bat theme config
+export BAT_THEME="base16"
