@@ -40,5 +40,6 @@ export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
 # eza better ls config
 alias ls="eza --icons=always"
 
-# Added Bat theme config
+# Added Bat better Cat config
+alias cat="bat"
 export BAT_THEME="base16"
