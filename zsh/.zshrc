@@ -33,9 +33,6 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # Created by `pipx` on 2025-01-29 22:15:45
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Add Postgres to Path
 export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
 
