@@ -109,7 +109,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/SystemCryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexdcodex.systembootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.systembootstrap/usr/appleinternal/bin:/Applications/iTerm.app/Contents/Resources/utilities:/Users/karoljanowski/.local/bin:/Users/karoljanowski/Library/Application Support/JetBrains/Toolbox/scripts:/Users/karoljanowski/.local/bin"
+
 source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -118,3 +118,15 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by `pipx` on 2025-01-29 22:15:45
+export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+# Add Postgres to Path
+export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
+
+# COLORLS config
+PATH=$PATH:$(ruby -e 'puts Gem.bindir')
+source $(dirname $(gem which colorls))/tab_complete.sh
+alias lc='colorls'
