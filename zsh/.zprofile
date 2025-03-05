@@ -1,4 +1,9 @@
 
+#Sourcing .zshrc file
+if [ -f ~/.zshrc ]; then
+  source ~/.zshrc
+fi
+
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Created by `pipx` on 2025-01-29 22:15:45
