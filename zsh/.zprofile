@@ -1,15 +1,10 @@
 
-#Sourcing .zshrc file
+#Get my Path Setup
+if [ -f ~/.profile ]; then
+  source ~/.profile
+fi
+
+#Get my prompt and aliases setup
 if [ -f ~/.zshrc ]; then
   source ~/.zshrc
 fi
-
-eval "$(/opt/homebrew/bin/brew shellenv)"
-
-# Created by `pipx` on 2025-01-29 22:15:45
-export PATH="$PATH:/Users/karoljanowski/.local/bin"
-
-
-# Added by Toolbox App
-export PATH="$PATH:/Users/karoljanowski/Library/Application Support/JetBrains/Toolbox/scripts"
-
