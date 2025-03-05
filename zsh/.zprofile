@@ -8,5 +8,3 @@ export PATH="$PATH:/Users/karoljanowski/.local/bin"
 # Added by Toolbox App
 export PATH="$PATH:/Users/karoljanowski/Library/Application Support/JetBrains/Toolbox/scripts"
 
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
