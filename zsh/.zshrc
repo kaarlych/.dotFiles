@@ -32,13 +32,6 @@ bindkey '^[[B' history-search-forward
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Created by `pipx` on 2025-01-29 22:15:45
-export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
-
-# Add Postgres to Path
-export PATH="/opt/homebrew/Cellar/postgresql@17/17.2/bin:$PATH"
-
-
 # eza better ls config
 alias ls="eza --icons=always"
 
