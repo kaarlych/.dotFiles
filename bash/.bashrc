@@ -1,5 +1,10 @@
 # ~/.bashrc
 
-source ~/.bash_git
+# bash-git-prompt
+if [ -f "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh" ]; then
+    __GIT_PROMPT_DIR="/opt/homebrew/opt/bash-git-prompt/share"
+    source "/opt/homebrew/opt/bash-git-prompt/share/gitprompt.sh"
+  fi
 
-export PS1="\[\e[00;37m\]\n\u@\h \w\[\033[32m\]\$(__git_ps1)\n\[\e[0m\]\[\e[00;31m\]$ \[\e[0m\]"
+#bash-completion
+[[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
