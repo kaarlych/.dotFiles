@@ -5,12 +5,8 @@
 	defaultBranch = main  
 [color]
 	ui = auto
-[credential] 
-	helper = /usr/local/share/gcm-core/git-credential-manager
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [core]
-  editor = nvim
+  editor = vim
 	autocrlf = input
 	excludesFile = ~/.global_gitignore
 [filter "lfs"]

@@ -1,3 +1,9 @@
+# Start ssh-agent if not already running
+if [ -z "$SSH_AUTH_SOCK" ]; then
+    eval "$(ssh-agent -s)"
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519
+fi
+
 #Added homebrew to path
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
