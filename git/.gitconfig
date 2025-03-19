@@ -2,7 +2,9 @@
 	name = Karol Janowski
 	email = karoljanowski@yahoo.com
 [init]
-	defaultBranch = main  
+	defaultBranch = main
+[credential]
+    helper = osxkeychain
 [color]
 	ui = auto
 [core]
