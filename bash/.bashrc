@@ -9,6 +9,11 @@ fi
 #bash-completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
+# aliases
+if [ -f "~/my_aliases" ]; then
+	source ~/my_aliases
+fi
+
 # bash history
 HISTFILE=~/.bash_history
 HISTCONTROL=ignoredups
