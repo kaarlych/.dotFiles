@@ -22,6 +22,17 @@ hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "C", function()
     openOrFocusApp("ChatGPT")  -- Replace "ChatGPT" with the exact app name as shown in Activity Monitor
 end)
 
+-- Bind Hyper + N to start a new chat in ChatGPT
+hs.hotkey.bind({"cmd", "alt", "ctrl", "shift"}, "N", function()
+    local app = hs.application.find("ChatGPT")
+    if app then
+        app:activate()
+        hs.eventtap.keyStroke({"cmd"}, "N")  -- Simulates Cmd + N to start a new chat
+    else
+        hs.application.launchOrFocus("ChatGPT")
+    end
+end)
+
 -- 🔲 Window Management
 hs.hotkey.bind(hyper, "Left", function()
     local win = hs.window.focusedWindow()
