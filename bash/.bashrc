@@ -8,3 +8,18 @@ fi
 
 #bash-completion
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
+
+# bash history
+HISTFILE=~/.bash_history
+HISTCONTROL=ignoredups
+HISTSIZE=10000
+SAVEHIST=10000
+HISTIGNORE="&:ls:ps:history"
+ISTTIMEFORMAT="%F %T "
+shopt -s histappend
+
+# Check if the history file exists, if not, create it
+if [[ ! -f $HISTFILE ]]; then
+  touch $HISTFILE
+  chmod 600 $HISTFILE
+fi
