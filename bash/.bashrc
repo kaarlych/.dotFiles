@@ -10,7 +10,7 @@ fi
 [[ -r "/opt/homebrew/etc/profile.d/bash_completion.sh" ]] && . "/opt/homebrew/etc/profile.d/bash_completion.sh"
 
 # aliases
-if [ -f "~/my_aliases" ]; then
+if [ -f ~/my_aliases ]; then
 	source ~/my_aliases
 fi
 
