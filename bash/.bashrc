@@ -1,7 +1,7 @@
 # ~/.bashrc
 
 # Check if it's WSL (Windows Subsystem for Linux)
-if grep -q "Microsoft" /proc/version; then
+if grep -q "microsoft" /proc/version; then
     echo "Running on WSL"
 
    # ~/.bashrc: executed by bash(1) for non-login shells.
