@@ -16,7 +16,9 @@ brew update
 
 # Define CLI packages (no casks)
 packages=(
-    awscli		
+    awscli
+    azure-cli
+    bash
     git
     wget
     htop
@@ -25,6 +27,7 @@ packages=(
     maven
     postgresql
     stow
+    terraform
 )
 
 echo "📦 Installing CLI tools..."
