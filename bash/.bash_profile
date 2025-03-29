@@ -8,10 +8,3 @@ fi
 if [ -f ~/.bashrc ]; then
     source ~/.bashrc
 fi
-
-# fastfetch
-if command -v fastfetch &> /dev/null; then
-        fastfetch
-else
-        echo "fastfetch command not found"
-fi
