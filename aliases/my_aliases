@@ -11,6 +11,7 @@ alias gaa="git add ."
 alias gs="git status"
 alias gsb="git status -sb"
 
+alias gc="git commit"
 alias gcm="git commit -m"
 alias gcma="git commit -am"
 
