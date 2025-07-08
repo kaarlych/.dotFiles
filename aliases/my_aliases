@@ -21,3 +21,5 @@ alias gl10="git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yello
 alias gl15="git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 15"
 alias gl20="git --no-pager log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit -n 20"
 
+# yt-dlp
+alias yt-mp3="yt-dlp -x --audio-format mp3 --embed-metadata --embed-thumbnail"
